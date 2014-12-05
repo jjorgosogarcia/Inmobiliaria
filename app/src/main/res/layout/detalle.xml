@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivImagen"
+        android:src="@drawable/ic_house"
+        android:layout_below="@+id/tvId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvId"
+        android:layout_toRightOf="@+id/ivImagen"
+        android:layout_toEndOf="@+id/ivImagen"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvLocalidad"
+        android:layout_below="@+id/tvId"
+        android:layout_toRightOf="@+id/ivImagen"
+        android:layout_toEndOf="@+id/ivImagen"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvCalle"
+        android:layout_below="@+id/tvLocalidad"
+        android:layout_alignLeft="@+id/tvLocalidad"
+        android:layout_alignStart="@+id/tvLocalidad" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvTipo"
+        android:layout_below="@+id/tvCalle"
+        android:layout_alignLeft="@+id/tvCalle"
+        android:layout_alignStart="@+id/tvCalle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvPrecio"
+        android:layout_below="@+id/tvTipo"
+        android:layout_alignLeft="@+id/tvTipo"
+        android:layout_alignStart="@+id/tvTipo" />
+
+
+</RelativeLayout>

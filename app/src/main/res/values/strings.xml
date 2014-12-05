@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Inmobiliaria</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_secundaria">Secundaria</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Yatiene">This property is already on the list</string>
+    <string name="error">Please complete all fields</string>
+    <string name="action_anadir">Add property</string>
+    <string name="action_delete">Delete property</string>
+    <string name="action_modify">Modify property</string>
+    <string name="title_activity_gestionar_inmobiliaria">Real Estate</string>
+    <string name="eliminarUno">You want to delete the property?</string>
+    <string name="title_activity_fotos">Pictures</string>
+    <string name="foto">Add picture</string>
+</resources>

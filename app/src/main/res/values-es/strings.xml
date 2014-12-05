@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Inmobiliaria</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_secundaria">Secundaria</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Yatiene">Este inmueble ya esta en la lista</string>
+    <string name="error">Por favor, complete todos los campos</string>
+    <string name="action_anadir">Agregar inmueble</string>
+    <string name="action_delete">Eliminar</string>
+    <string name="action_modify">Modificar</string>
+    <string name="title_activity_gestionar_inmobiliaria">gestionarInmobiliaria</string>
+    <string name="eliminarUno">Quieres eliminar el inmueble?</string>
+    <string name="title_activity_fotos">Fotos</string>
+    <string name="foto">Añadir foto</string>
+
+
+</resources>

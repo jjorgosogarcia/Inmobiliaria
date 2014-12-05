@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etId"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Id"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etLocalidad"
+        android:layout_below="@+id/etId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Localidad"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCalle"
+        android:layout_below="@+id/etLocalidad"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Calle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <EditText
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etNumero"
+        android:layout_alignTop="@+id/etCalle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Nº"
+        android:layout_marginRight="15dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTipo"
+        android:layout_below="@+id/etCalle"
+        android:layout_alignLeft="@+id/etCalle"
+        android:layout_alignStart="@+id/etCalle"
+        android:hint="Tipo"
+        android:layout_alignRight="@+id/etNumero"
+        android:layout_alignEnd="@+id/etNumero" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etPrecio"
+        android:layout_below="@+id/etTipo"
+        android:layout_alignLeft="@+id/etTipo"
+        android:layout_alignStart="@+id/etTipo"
+        android:hint="Precio"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:id="@+id/btAceptar"
+        android:layout_below="@+id/etPrecio"
+        android:layout_alignLeft="@+id/etPrecio"
+        android:layout_alignStart="@+id/etPrecio"
+        android:onClick="aceptar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:id="@+id/btCancelar"
+        android:layout_alignTop="@+id/btAceptar"
+        android:layout_toRightOf="@+id/btAceptar"
+        android:layout_toEndOf="@+id/btAceptar"
+        android:onClick="cancelar" />
+
+</RelativeLayout>
