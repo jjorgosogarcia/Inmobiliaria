@@ -250,6 +250,10 @@ public class Principal extends Activity {
         if (id == R.id.action_anadir) {
             Intent i = new Intent(this, gestionarInmobiliaria.class);
             startActivityForResult(i, CREAR);
+        }else
+        if (id == R.id.action_ordenar_precio) {
+            Collections.sort(inmueble, new ordenaPrecios());
+            ad.notifyDataSetChanged();
         }
 
         return super.onOptionsItemSelected(item);
@@ -285,6 +289,7 @@ public class Principal extends Activity {
                     public void onClick(DialogInterface dialog, int whichButton) {
                         inmueble.remove(index);
                         guardar();
+                        borrarFotos(index);
                         ad.notifyDataSetChanged();
                     }
                 });
@@ -292,7 +297,7 @@ public class Principal extends Activity {
         alert.show();
     }
 
-    public class OrdenaPrecios implements Comparator<Inmuebles> {
+    public class ordenaPrecios implements Comparator<Inmuebles> {
         @Override
         public int compare(Inmuebles i1, Inmuebles i2) {
             if (i1.getPrecio() > (i2.getPrecio()))
@@ -437,5 +442,17 @@ public class Principal extends Activity {
         Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
     }
 
+    private void borrarFotos(int index){
+        if(index!=-1){
+            File [] array = this.getExternalFilesDir(Environment.DIRECTORY_DCIM).listFiles();
+            if(array != null && array.length >0){
+                for(File archivo : array){
+                    if(archivo.getPath().contains("inmueble_"+index+"_")){
+                        archivo.delete();
+                    }
+                }
+            }
+        }
+    }
 
 }

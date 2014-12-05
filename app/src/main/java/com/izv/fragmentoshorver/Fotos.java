@@ -79,12 +79,6 @@ public class Fotos extends Activity {
 tv1.setText(propiedad.getCalle() + " " + propiedad.getNumero() + ", " + propiedad.getLocalidad());
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.fotos, menu);
-        return true;
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
